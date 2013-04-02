@@ -1,4 +1,7 @@
 Andriana::Application.routes.draw do
+  resources :events
+
+
   resources :pictures
   
   root :to => 'home#main_carousel'
