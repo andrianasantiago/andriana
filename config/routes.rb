@@ -1,5 +1,7 @@
 Andriana::Application.routes.draw do
   resources :pictures
+  
+  root :to => 'home#main_carousel'
 
 
   # The priority is based upon order of creation:

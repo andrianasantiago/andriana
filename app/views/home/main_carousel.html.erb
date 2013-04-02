@@ -1,0 +1,42 @@
+<div id="container">
+  
+  <header>
+    <h1>Andriana Santiago</h1>
+  </header>
+  
+  <div id="main_carousel" class="carousel slide">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <%= image_tag Picture.first.image, :width => 555 %>
+      </div>
+      
+      <% Picture.all[1..-1].each do |picture| %>
+        <div class="item">
+          <%= image_tag picture.image, :width => 555 %>
+        </div>
+      <% end %>
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+  </div>
+  
+  <div id="information">
+    <p>
+      Andriana Santiago explores.
+    </p>
+    <p>
+      One specialty is veggies.  It's Veggie Time.
+    </p>
+    <p>
+      Great rings &amp; art also available!
+    </p>
+  </div>
+  
+</div>
