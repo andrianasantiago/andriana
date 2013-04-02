@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: andriana_development
+  username: mikey
+  host: localhost
